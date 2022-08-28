@@ -86,6 +86,10 @@
     text-decoration: underline;
 }
 
+.child-search .selected{
+    background: #3c4043;
+}
+
 .loader-container{
     display: grid;
     place-items: center;
