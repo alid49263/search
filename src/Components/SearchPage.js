@@ -9,11 +9,11 @@ const SearchPage = ({ sidebar }) => {
 
     return (
         <>
-            <div className='main-container'>
+            <div className={`main-container ${sidebar&&'child-search'}`}>
                 <div className={`search-result-container ${sidebar&&'block'}` }>
                     <Images setActive={setActive} active={active} />
                 </div>
-                {active && <ImageViewer active={active} setActive={setActive} />}
+                {active && !sidebar &&  <ImageViewer active={active} setActive={setActive} />}
             </div>
         </>
     )
